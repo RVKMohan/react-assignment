@@ -1,38 +1,131 @@
-.App {
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and text color */
+body {
+  background-color: #f0f0f5;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Style the header */
+.header {
+  margin-top: 0.1cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  border-radius: 10px;
   text-align: center;
+  background-color: #adacd6;
+  color: #fff;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Style the toggle buttons */
+.toggle {
+  text-align: center;
+  margin: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.toggle button {
+  background-color: #adacd6;
+  color: #fff;
+  padding: 0.5rem 4rem;
+  border : none;
+  cursor: pointer;
+  height: 2cm;
+  width:15cm;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#btn1{
+  border-radius: 10px 0px 0px 10px;
+  opacity: 1;
+  font-size: larger;
+  
+}
+
+#btn2{
+  border-radius: 0px 10px 10px 0px;
+  opacity: 1;
+  font-size: larger;
+}
+
+#btn1:hover {opacity: 0.6}
+#btn2:hover {opacity: 0.6}
+
+
+
+
+
+/* Style the table */
+#table_content {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table_content td, #table_content th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table_content tr:hover {
+  background-color: #adacd6;
+}
+
+#table_content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #adacd6;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+/* Style the table and chart containers */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 4cm;
+  padding-right: 4cm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Make the table and chart responsive */
+.table, .chart {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+/* Apply responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    font-size: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .toggle button {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+
+  .table, .chart {
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
 }
+
+
+
+
+
