@@ -1,3 +1,7 @@
+![Screenshot 2024-06-21 113042](https://github.com/RVKMohan/react-assignment/assets/107797667/2f8ac5ec-b98e-4474-952e-17ed708aa594)
+![Screenshot 2024-06-21 113054](https://github.com/RVKMohan/react-assignment/assets/107797667/72ac0814-9692-451b-b35d-457c1079ad6d)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
